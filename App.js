@@ -7,6 +7,7 @@ const img = require('./assets/logo.png');
 const { width, height } = Dimensions.get('window');
 
 export default class App extends React.Component {
+  /* Constructor and functions */
   constructor(props){
     super(props);
     
@@ -85,6 +86,9 @@ export default class App extends React.Component {
       })
     ]).start();
   };
+  /* End Constructor and functions */
+
+  /*------------ RENDER ---------------*/
 
   render() {
 
