@@ -1,7 +1,6 @@
 import {  Dimensions, StyleSheet } from 'react-native';
-const {width, height} = Dimensions.get('window');
-const scr = Dimensions.get('screen');
-console.log(scr);
+const {width} = Dimensions.get('window');
+
 export default styles = StyleSheet.create({
   container: {
     display:'flex',
