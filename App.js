@@ -10,12 +10,13 @@ export default class App extends React.Component {
   /* Constructor and functions */
   constructor(props){
     super(props);
-    
+    Expo.ScreenOrientation.allow(Expo.ScreenOrientation.Orientation.PORTRAIT_UP );
+
     this._focusNextField = this._focusNextField.bind(this);
     this.state = {
       text_1: "Input email address",
       text_2:"Input password", 
-      errorTxtStyle: { width:250, fontStyle:'italic', fontSize: Platform.OS ==='android' ? 12: 14,color: '#FF0000'},
+      errorTxtStyle: { width:250, fontStyle:'italic', fontSize: 14 ,color: '#FF0000'},
       btnStatus: false,
       isHiddenEmail: false,
       isHiddenPassword: false 
@@ -47,7 +48,7 @@ export default class App extends React.Component {
 
     if(regex.test(this.email) === true && (typeof(this.password) !== 'undefined' && this.password.length > 5 && this.password.length < 13))
     {
-      Alert.alert("Login Successful.");
+      Alert.alert("Message","Login Successful.");
     }
 
   }

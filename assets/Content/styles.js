@@ -30,7 +30,7 @@ export default styles = StyleSheet.create({
     bottom: 50
   },
   viewStyle:{
-      width: width == 320 ? 250 : width == 360 ? 270 : width == 480 ? 320 : 250,
+      width: width == 320 ? 250 : width == 360 ? 270 : 250,
       height: 70
   },
   textBox: {
@@ -51,6 +51,6 @@ export default styles = StyleSheet.create({
   btnStyle:{
     position:'relative',
     top:20,
-    width: width == 320 ? 250 : width == 360 ? 270 : width == 480 ? 320 : 250
+    width: width == 320 ? 250 : width == 360 ? 270 : 250
   }
 });
