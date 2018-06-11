@@ -1,10 +1,10 @@
 import React from 'react';
-import { Dimensions,Platform,Text,Animated, View, TextInput,TouchableOpacity, 
+import { Platform,Text,Animated, View, TextInput,TouchableOpacity, 
   Button, Alert, Keyboard, KeyboardAvoidingView } from 'react-native';
 import { KeyboardAwareScrollView } from 'react-native-keyboard-aware-scroll-view';
 import styles from './assets/styles';
 const img = require('./assets/Images/logo.png');
-const { width, height } = Dimensions.get('window');
+
 
 export default class App extends React.Component {
   /* Constructor and functions */
